@@ -75,6 +75,14 @@ function updateGUI() {
         if (player.origincount > 1) {document.getElementById("or" + (i+1)).classList.add("locked")}
         else {document.getElementById("or" + (i+1)).classList.remove("locked")};
     }
+    if (player.origincount < 1) {
+        document.getElementById("reset-button").classList.add("locked");
+        document.getElementById("continue-button").classList.add("locked");
+    }
+    else {
+        document.getElementById("reset-button").classList.remove("locked");
+        document.getElementById("continue-button").classList.remove("locked");
+    };
     document.getElementById("origins-chosen").innerHTML = "Origins chosen: " + player.getOr1Name() + " and " + player.getOr2Name() + ".";
 }
 
