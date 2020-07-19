@@ -6,26 +6,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hero Manager Pre-Pre-Pre-Alpha</title>
+    <title>Hero Manager Pre-Pre-Alpha</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-  <div id="currency">You have $10</div>
-  <div class="generators-container">
-    <div class="generator" id="gen1" onclick="buyGenerator(1)"> </div>
-    <div class="generator" id="gen2" onclick="buyGenerator(2)"> </div>
-    <div class="generator" id="gen3" onclick="buyGenerator(3)"> </div>
-    <div class="generator" id="gen4" onclick="buyGenerator(4)"> </div>
-    <div class="generator" id="gen5" onclick="buyGenerator(5)"> </div>
-    <div class="generator" id="gen6" onclick="buyGenerator(6)"> </div>
-    <div class="generator" id="gen7" onclick="buyGenerator(7)"> </div>
-    <div class="generator" id="gen8" onclick="buyGenerator(8)"> </div>
-    <div class="generator" id="gen9" onclick="buyGenerator(9)"> </div>
-    <div class="generator" id="gen10" onclick="buyGenerator(10)"> </div>
+<body style="font-family:arial">
+  <div id="origin-wrapper" style="display: block">
+    <div id="instructions">Choose up to two origin keywords to create your origin story.</div>
+    <div id="origins-chosen"></div>
+    <div class="button-container">
+      <div class="button" id="reset-button" onclick="player.resetOrigins()">Reset</div>
+      <div class="button" id="continue-button" onclick="mainPage()">Continue</div>
+    </div>
+    <div class="origins-container">
+      <div class="origin" id="or1" onclick="pickOrigin(1)" onmouseover="descBox(1)" onmouseout="descBox(0)">Alien</div>
+      <div class="origin" id="or2" onclick="pickOrigin(2)" onmouseover="descBox(1)" onmouseout="descBox(0)">Artifact</div>
+      <div class="origin" id="or3" onclick="pickOrigin(3)" onmouseover="descBox(3)" onmouseout="descBox(0)">Blessed</div>
+      <div class="origin" id="or4" onclick="pickOrigin(4)" onmouseover="descBox(4)" onmouseout="descBox(0)">Construct</div>
+      <div class="origin" id="or5" onclick="pickOrigin(5)" onmouseover="descBox(5)" onmouseout="descBox(0)">Deity</div>
+      <div class="origin" id="or6" onclick="pickOrigin(6)" onmouseover="descBox(6)" onmouseout="descBox(0)">Experiment</div>
+      <div class="origin" id="or7" onclick="pickOrigin(7)" onmouseover="descBox(7)" onmouseout="descBox(0)">Genetic</div>
+      <div class="origin" id="or8" onclick="pickOrigin(8)" onmouseover="descBox(8)" onmouseout="descBox(0)">Magic</div>
+      <div class="origin" id="or9" onclick="pickOrigin(9)" onmouseover="descBox(9)" onmouseout="descBox(0)">Mutated</div>
+      <div class="origin" id="or10" onclick="pickOrigin(10)" onmouseover="descBox(10)" onmouseout="descBox(0)">Rich</div>
+      <div class="origin" id="or11" onclick="pickOrigin(11)" onmouseover="descBox(11)" onmouseout="descBox(0)">Scientist</div>
+      <div class="origin" id="or12" onclick="pickOrigin(12)" onmouseover="descBox(12)" onmouseout="descBox(0)">Talented</div>
+      <div class="origin" id="or13" onclick="pickOrigin(13)" onmouseover="descBox(13)" onmouseout="descBox(0)">Technology</div>
+    </div>
+    <div id="desc-box"></div>
+    <noscript>This page requires JavaScript to work. Apologies!</noscript>
   </div>
-
-	<noscript>This page requires JavaScript to work. Apologies!</noscript>
+  <div id="main-wrapper" style="display: none">Thanks for playing this demo of a demo (of a demo)! More coming soon lol</div>
 </body>
 <script type="text/javascript" src="main.js"></script>
 
