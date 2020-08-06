@@ -2,6 +2,70 @@
     box-sizing: border-box;
 }
 
+#total-stats {
+    margin: 5px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#stats-columns {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#stats-left {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+}
+
+#stats-right {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+#stats-desc {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 26%;
+    margin-right: 26%;
+    font-size: 1.3em;
+    text-align: center;
+    height: 100px;
+}
+
+.stats-container {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.stats-button {
+    border: 2px solid khaki;
+    background-color: beige;
+    text-align: center;
+    width: 40px;
+    padding: 3px;
+    font-size: 1.1em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.stats-read {
+    border: 2px solid khaki;
+    background-color: khaki;
+    text-align: center;
+    width: 240px;
+    padding: 3px;
+    font-size: 1.1em;
+}
+
+
+
+
 .origin {
     border: 2px solid khaki;
     background-color: beige;
@@ -25,9 +89,9 @@
     margin: auto;
 }
 
-#instructions {
+.instructions {
     margin: 20px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-align: center;
 }
 
@@ -38,7 +102,7 @@
     text-align: center;
 }
 
-#desc-box {
+#origin-desc {
     margin-top: 30px;
     margin-bottom: 40px;
     margin-left: 26%;
@@ -47,11 +111,71 @@
     text-align: center;
 }
 
-.button-container {
+
+#powers-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.powers-label {
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    user-select: none;
+}
+
+.power {
+    border: 2px solid khaki;
+    background-color: beige;
+    text-align: center;
+    width: 25%;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.power.locked {
+    background-color: red;
+    border: 2px solid darkred;
+}
+
+#powers-desc {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 26%;
+    margin-right: 26%;
+    font-size: 1em;
+    text-align: center;
+}
+
+#powers-chosen {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+
+.button-container-small {
     display: flex;
     width: 180px;
     flex-wrap: wrap;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-container-large {
+    display: flex;
+    width: 270px;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -71,4 +195,14 @@
 .button.locked {
     background-color: lightgray;
     border: 2px solid gray;
+}
+
+.proof-of-concept {
+    width: 40%;
+    margin: auto;
+}
+
+.rgp {
+    border: 2px solid khaki;
+    background-color: beige;
 }
